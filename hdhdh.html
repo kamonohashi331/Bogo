@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Relapse Trigger</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+      overflow: hidden;
+    }
+    #video {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your relapse video -->
+  <video id="video" src="relapse.mp4" autoplay></video>
+
+  <script>
+    // Wait 5 seconds, then show and play the video
+    setTimeout(() => {
+      const video = document.getElementById("video");
+      video.style.display = "block";
+      video.play();
+    }, 5000);
+  </script>
+
+</body>
+</html>
